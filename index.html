@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a18">
+  <meta name="description" content="ArmyVAI — информационная вики.">
+  <title>ArmyVAI — Вики</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Перейти к содержимому</a>
+  <header class="topbar">
+    <button class="mobile-menu" id="mobileMenu" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <a class="brand" href="#" aria-label="ArmyVAI — главная">
+      <span class="brand-mark">A<span>V</span></span>
+      <span class="brand-copy"><strong>ArmyVAI</strong><small>БАЗА ЗНАНИЙ</small></span>
+    </a>
+    <div class="topbar-center"><span class="status-dot"></span> НЕЗАВИСИМАЯ ВИКИ-ПЛАТФОРМА</div>
+    <a class="top-link" href="#about">О проекте <span>↗</span></a>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-label">НАВИГАЦИЯ</div>
+      <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span> Главная <span class="nav-arrow">›</span></button>
+      <div class="side-label side-label-spaced">РАЗДЕЛЫ ВИКИ</div>
+      <button class="nav-item" data-page="overview"><span class="nav-icon">▦</span> Обзор проекта</button>
+      <button class="nav-item" data-page="guides"><span class="nav-icon">▤</span> Руководства</button>
+      <button class="nav-item" data-page="rules"><span class="nav-icon">⚑</span> Правила и регламенты</button>
+      <button class="nav-item" data-page="ranks"><span class="nav-icon">◇</span> Звания и структура</button>
+      <button class="nav-item" data-page="faq"><span class="nav-icon">?</span> Частые вопросы</button>
+      <div class="sidebar-bottom">
+        <div class="mini-card">
+          <div class="mini-card-icon">✦</div>
+          <strong>Это начало</strong>
+          <p>Добавьте свои материалы, чтобы превратить шаблон в полноценную энциклопедию.</p>
+          <a href="#how-to-edit" data-page="howto">Как редактировать <span>→</span></a>
+        </div>
+        <div class="side-foot">ARMYVAI WIKI <span>•</span> v1.0</div>
+      </div>
+    </aside>
+
+    <main id="content" class="main-content">
+      <div class="breadcrumbs"><span>ВИКИ</span><span class="crumb-slash">/</span><span id="crumbCurrent">ГЛАВНАЯ</span></div>
+      <section id="page-home" class="page active">
+        <div class="hero">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="eyebrow-line"></span> ЦЕНТР ИНФОРМАЦИИ</div>
+            <h1>Знания.<br><em>Структура.</em><br>Порядок.</h1>
+            <p class="hero-text">Добро пожаловать в ArmyVAI — единую базу знаний проекта. Здесь собраны материалы, инструкции и справочная информация.</p>
+            <button class="primary-btn" data-page="overview">Изучить вики <span>↗</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-emblem"><span class="emblem-inner">AV</span></div>
+            <div class="art-cross">+</div><div class="art-coord">56°01' N<br>37°28' E</div>
+            <div class="art-caption">KNOWLEDGE<br>IS READINESS</div>
+          </div>
+          <div class="hero-bottom"><span>СИСТЕМА ДОКУМЕНТАЦИИ</span><span>01 — 06 <b>●</b></span></div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="eyebrow dark"><span class="eyebrow-line"></span> БЫСТРЫЙ ДОСТУП</div><h2>Исследуйте разделы</h2></div>
+          <span class="section-note">ВЫБЕРИТЕ НАПРАВЛЕНИЕ <b>↓</b></span>
+        </div>
+        <div class="cards-grid">
+          <button class="feature-card" data-page="overview"><span class="card-index">01 / ОБЩЕЕ</span><span class="feature-icon">▦</span><strong>Обзор проекта</strong><p>Основная информация, назначение и устройство базы знаний.</p><span class="card-link">Открыть раздел <b>↗</b></span></button>
+          <button class="feature-card" data-page="guides"><span class="card-index">02 / ПОМОЩЬ</span><span class="feature-icon">▤</span><strong>Руководства</strong><p>Пошаговые инструкции и полезные материалы для участников.</p><span class="card-link">Открыть раздел <b>↗</b></span></button>
+          <button class="feature-card" data-page="rules"><span class="card-index">03 / ДОКУМЕНТЫ</span><span class="feature-icon">⚑</span><strong>Правила и регламенты</strong><p>Соберите правила, положения и рабочие процедуры в одном месте.</p><span class="card-link">Открыть раздел <b>↗</b></span></button>
+          <button class="feature-card" data-page="ranks"><span class="card-index">04 / СТРУКТУРА</span><span class="feature-icon">◇</span><strong>Звания и структура</strong><p>Организационная схема, роли, подразделения и ответственность.</p><span class="card-link">Открыть раздел <b>↗</b></span></button>
+        </div>
+        <section class="bottom-strip" id="about"><div class="strip-symbol">i</div><div><strong>ArmyVAI — ваш проект, ваши материалы</strong><p>Сейчас это стартовый шаблон: тематические тексты можно заменить на ваши данные в файле <code>app.js</code>.</p></div><button data-page="howto" class="text-btn">Как изменить сайт <span>→</span></button></section>
+      </section>
+
+      <section id="page-article" class="page">
+        <div class="article-header"><div class="eyebrow dark"><span class="eyebrow-line"></span> СПРАВОЧНЫЙ МАТЕРИАЛ</div><h1 id="articleTitle">Раздел</h1><p id="articleLead" class="article-lead"></p><div class="article-meta"><span class="status-dot"></span> СТАРТОВАЯ СТАТЬЯ <span class="meta-sep">/</span> ARMYVAI</div></div>
+        <div id="articleBody" class="article-body"></div>
+        <div class="article-notice"><span>✦</span><p><strong>Материал для заполнения</strong><br>Это демонстрационный контент. Добавьте проверенную информацию вашего проекта перед публикацией.</p></div>
+        <button class="back-btn" data-page="home">← Вернуться на главную</button>
+      </section>
+
+      <section id="page-howto" class="page">
+        <div class="article-header"><div class="eyebrow dark"><span class="eyebrow-line"></span> РЕДАКТИРОВАНИЕ</div><h1>Как настроить<br><em>ArmyVAI</em></h1><p class="article-lead">Шаблон создан без сборки и внешних библиотек — его можно публиковать прямо на GitHub Pages.</p></div>
+        <div class="article-body">
+          <h2>1. Измените название и описание</h2><p>Откройте <code>index.html</code> и измените заголовок, подпись и описание под тематику вашего проекта.</p>
+          <h2>2. Добавьте статьи</h2><p>Откройте <code>app.js</code>. В объекте <code>articles</code> можно поменять заголовки, описания, пункты и содержимое страниц. Навигационные разделы на главной уже подключены.</p>
+          <h2>3. Настройте внешний вид</h2><p>Цвета, отступы, карточки и мобильная версия находятся в <code>styles.css</code>.</p>
+          <h2>4. Опубликуйте</h2><p>Создайте репозиторий <code>ArmyVAI</code>, загрузите в корень все файлы архива, затем откройте Settings → Pages. В разделе Build and deployment выберите <b>Deploy from a branch</b>, ветку <code>main</code> и папку <code>/(root)</code>, затем нажмите Save.</p>
+        </div>
+        <button class="back-btn" data-page="home">← Вернуться на главную</button>
+      </section>
+
+      <footer class="footer"><span>© 2026 ARMYVAI WIKI</span><span>СОЗДАНО ДЛЯ ЗНАНИЙ <b>✳</b></span><a href="#top" id="toTop">НАВЕРХ ↑</a></footer>
+    </main>
+
+    <aside class="right-rail">
+      <div class="search-wrap"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Поиск по вики..." aria-label="Поиск по вики"><kbd>⌘ K</kbd></div>
+      <div id="searchResults" class="search-results" hidden></div>
+      <div class="rail-section"><div class="rail-title">НА ЭТОЙ СТРАНИЦЕ <span>—</span></div><a href="#content" class="rail-link">Введение <i></i></a><a href="#page-home" class="rail-link">Разделы вики <i></i></a><a href="#about" class="rail-link">О проекте <i></i></a></div>
+      <div class="rail-quote"><span class="quote-mark">“</span><p>Порядок в знаниях — ясность в действиях.</p><span class="quote-line"></span><small>ПРИНЦИП ARMYVAI</small></div>
+      <div class="rail-bottom"><span class="pulse"></span> САЙТ ГОТОВ К НАПОЛНЕНИЮ</div>
+    </aside>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
